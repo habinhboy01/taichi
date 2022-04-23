@@ -1,0 +1,544 @@
+/*
+ * |---:[Đoạn này sẽ chứa các đoạn giới thiệu và thông tin về theme, như tên theme (Theme Name), tên tác giả (Theme Author), địa chỉ của tác giả (Author URI),...]:---|
+ 
+ * Theme Name: news
+ * Description: Đây là một theme đơn giản để thực hành Lập trình theme WordPress
+ * Theme URI: http://news.com
+ * Version: 1.0
+ * Author: phương nam
+ * Author URI: http://news.com
+ * Tags: starter theme, framework theme, two-columns, customize
+ * Textdomain: news
+ */
+
+ @font-face {
+	font-family: Playfair Display;
+	src:url("./font/static/PlayfairDisplay-Regular.ttf");
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span {
+	font-family: Playfair Display;
+	margin: 0;
+	padding: 0;
+}
+
+input:focus {
+	outline: none;
+}
+
+/*body trang header*/
+.header-logo {
+	margin-bottom: 60px;
+}
+
+.cart-contents {
+	text-decoration: none;
+	float: right;
+	position: relative;
+}
+
+.quantity-item {
+	background-color: red;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+}
+
+.cart-contents img {
+	margin-top: 15px;
+}
+
+@media(max-width: 450px) {
+	.img_logo {
+		width: 80%;
+	}
+}
+
+/*body trang chủ*/
+
+.layout {
+	text-align: center;
+}
+
+.text1 {
+	text-align: justify;
+	font-size: 18px;
+}
+
+.trademark {
+	list-style: none;
+	display: flex;
+	padding-left: 0;
+	margin-top: 40px;
+}
+
+.trademark li {
+	width: 120px;
+    text-align: center;
+    border: 1px solid silver;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.trademark a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.list-img {
+	justify-content: center;
+    margin-bottom: 35px;
+}
+
+.layout-product {
+	margin-top: 65px;
+}
+
+.layout-product h1 {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.layout-product img {
+	width: 100%;
+	height: auto;
+}
+
+.text-category a {
+	text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.text2 a {
+	text-align: center;
+	display: block;
+	height: 20px;
+	text-decoration: none;
+    color: gray;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.text3 {
+	text-align: center;
+    color: #681212;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.btn-buy {
+	text-decoration: none;
+}
+
+@media(max-width: 1024px) {
+	.text3 {
+		margin-top: 50px;
+	}
+}
+
+@media(max-width: 768px) {
+	.layout-product img {
+		height: 75%;
+	}
+
+	.text2 a {
+		font-size: 32px;
+		text-align: center;
+	}
+
+	.text3 {
+		font-size: 30px;
+	}
+}
+
+@media(max-width: 450px) {
+	.layout-product img {
+		height: auto;
+	}
+
+	.list-img {
+		flex-direction: column;
+    	width: 0;
+   		margin-left: 30%;
+    	line-height: 2;
+	}
+
+	.text2 a {
+		font-size: 25px;
+	}
+
+	.text3 {
+		margin-top: 25px;
+	}
+}
+
+@media(max-width: 375px) {
+	.text3 {
+		margin-top: 55px;
+	}
+}
+
+
+/*body chi tiet sản phẩm woocommrece*/
+.position-head {
+	margin-top: 25px;
+    margin-bottom: 40px;
+	position: relative;
+}
+
+.woocommerce-breadcrumb {
+	position: absolute;
+	right: 0;
+	top: 18px;
+}
+
+.img-product img {
+	width: 100%;
+	height: auto;
+}
+
+.img-product a {
+	text-decoration: none;
+}
+
+.img-product h2 {
+	display: block;
+	height: 20px;
+	color: black;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.price span {
+	color:#681212;
+	font-size: 22px;
+}
+
+.add-product {
+	background-color: #A4832B;
+	text-align: center;
+	margin-bottom: 25px;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 5px;
+	border-radius: 20px;
+}
+
+.add-product a {
+	color:#681212;
+	font-size: 18px;
+}
+
+@media(max-width: 1024px) {
+	.add-product {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media(max-width: 768px) {
+	.img-product h2 {
+		margin-bottom: 35px;
+	}
+	
+}
+
+@media(max-width: 450px) {
+	.img-product h2 {
+		margin-bottom: 20px;
+	}
+	
+}
+
+/* body trang single product */
+.position-product {
+	margin-top: 50px;
+}
+
+.text4 {
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.slider-product {
+	position: relative;
+}
+
+.flex-viewport {
+	width: 60%;
+	left: 30%;
+}
+
+.flex-control-nav {
+	list-style: none;
+	padding-left: 0;
+	position: absolute;
+	top: 0;
+}
+
+.flex-control-nav li {
+	padding-bottom: 10px;
+}
+
+.flex-control-nav img {
+	width: 83%;
+}
+
+.text9 {
+	margin-bottom: 10px;
+}
+
+.text9 a {
+	text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.text5 {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.text6 {
+	text-align: justify;
+	font-size: 18px;
+}
+
+.text7 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.quantity-button {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.quantity {
+	border: 1px solid silver;
+	font-size: 18px;
+}
+
+.quantity input {
+	background-color: white;
+	font-weight: bold;
+    text-align: center;
+	border: none;
+	width: 50px;
+}
+
+.button1 {
+    background-color: #A4832B;
+	color: #681212;
+    border-radius: 5px;
+    border: 1px solid silver;
+    width: 280px;
+    height: 37px;
+	margin-left: 30px;
+}
+
+.connection-product h1 {
+	margin-top: 50px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+@media(max-width: 991px) {
+	.button1 {
+		margin-left: 0;
+		margin-top: 30px;
+	}
+
+	.flex-control-nav {
+		position: unset;
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 20px;
+		justify-content: space-around;
+	}
+
+	.flex-viewport {
+		width: unset;
+		left: 0;
+	}
+}
+
+@media(max-width: 450px) {
+	.flex-viewport {
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+}
+
+/* body trang giỏ hàng cart */
+.background-cart {
+	margin-top: 60px;
+}
+
+.head-cart {
+	display: none;
+}
+
+.product-name a {
+	text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.product-price span {
+	font-size: 18px;
+}
+
+.product-subtotal span {
+	font-size: 18px;
+}
+
+#coupon_code {
+	width: 200px;
+}
+
+.text-total {
+	margin-bottom: 30px;
+}
+
+.button-cart {
+	background-color: black;
+    padding: 7px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+}
+
+.button-cart:hover {
+	color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+/* body trang thanh toán checkout */
+.background-checkout h3 {
+	margin: 30px 0;
+}
+
+.background-checkout input {
+	border: 1px solid silver;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.form-row label {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+#order_comments {
+	height: 150px;
+}
+
+#place_order {
+	background-color: red;
+}
+
+/* body trang cảm ơn */
+.text8 {
+	font-size: 20px;
+    margin-bottom: 20px;
+	color: #00C620;
+}
+
+.woocommerce-order-details__title,
+.woocommerce-column__title {
+	margin-bottom: 25px;
+}
+
+.woocommerce-privacy-policy-text {
+	display: none;
+}
+
+/*body footer*/
+.background-footer {
+	background-color: black;
+	color: white;
+	margin-top: 60px;
+	padding-top: 35px;
+	padding-bottom: 45px;
+}
+
+.text-footer {
+	color: #A4832B;
+	font-size: 22px;
+	margin: 20px 0;
+}
+
+.list-footer {
+	list-style: none;
+	text-decoration: none;
+	padding-left: 0;
+	line-height: 2;
+}
+
+.list-footer a {
+	text-decoration: none;
+	color: white;
+}
+
+.search-input {
+	background-color: black;
+	color: white;
+    width: 260px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin: 12px 0;
+}
+
+.search-input::placeholder {
+	color: white;
+}
+
+.wpcf7-submit {
+	background-color: black;
+    width: 60px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.item-footer {
+	margin-top: 10px;
+}
+
+.item-footer i {
+	font-size: 30px;
+	padding-right: 12px;	
+}
+
+
